@@ -14,25 +14,26 @@ def rot13(x):
   # interate through each character
 
   for id in split_list:
-# convert values to rot13 values
-    if id in string.whitespace:
-      results += "".join(id)
+# if a letter is a punctuation then add it
     if id in string.punctuation:
       results += "".join(id)
+#otherwise if its a whitespace or letter, lower or uppercase convert with our dictonary above.
     else:
       results += "".join(rot13_ids[id])
   return results
 
 
 if __name__ == '__main__':
+  #lets start out simple with a couple of letters
   print(rot13('ab'))
+  #lets add a space and a capital letter
   print(rot13(' R'))
   #lets test punctuation
   print(rot13('%$abcdefghi'))
   #lets test lowercase and punctuation
   print(rot13('rich%'))
   #lets test upper and lower case
-  print(rot13('Rich '))
+  print(rot13('R i c h '))
   #lets test upper and lower case again
   print(rot13('Code'))
   #lets test all upper case
