@@ -4,3 +4,10 @@ Their inputs are either an integer, str, or object. The functions are written do
 def NameE(a):
 # here we get a name error because we are attempting to access a variable that doesnt exist
     print(y)
+
+def TypeE(b):
+# here we get a type error because we can not perform math on a str object
+    b =2
+    print('b' + b)
+
+
