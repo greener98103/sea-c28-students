@@ -1,5 +1,13 @@
 def rot13(x):
   import string
+  '''This function performs ROT13 encryption on a string. The function
+  takes the string , converts to a list, splits each character up and iterates it through
+  a for loop. Along the way it converts alphabetic characters to rot13 encryption, accepts whitespace,
+  and accepts punctuation. It will accept upper and lower case characters. It returns a rot13 converted string
+   arguments:
+    x : a string
+    Returns: a rot13 converted string
+    '''
   #load in a string
   x = str(x)
 #Create a dictonary that handles the conversion/encryption of letters. Add a place at the end for whitespace
