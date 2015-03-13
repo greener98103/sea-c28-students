@@ -14,3 +14,10 @@ def SyntaxE(c):
 # we receive this error because we attempt a variable assignment and print statement without the proper syntax 
     if c == 7 print(c)
 
+def AttributeE(object):
+# we get this error here because we are atempting to access an attribute that does not exist.
+	class Zero_attributes(object):
+                 	pass
+	o = Zero_attributes()
+	print o.an_attribute
+
