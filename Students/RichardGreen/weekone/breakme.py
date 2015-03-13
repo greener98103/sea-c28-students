@@ -10,4 +10,7 @@ def TypeE(b):
     b =2
     print('b' + b)
 
+def SyntaxE(c):
+# we receive this error because we attempt a variable assignment and print statement without the proper syntax 
+    if c == 7 print(c)
 
